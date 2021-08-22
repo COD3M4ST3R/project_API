@@ -1,0 +1,21 @@
+
+# Versions Of Used Libraries
+
+Pika:
+  version: 1.2.0
+Flask:
+  version: 2.0.1
+Apispec:
+  version: 5.0.0
+Webargs:
+  version: 8.0.0
+Marshmallow:
+  version: 3.13.0
+Minio:
+  version: 7.1.0
+Werkzeug:
+  version: 2.0.1
+psutil:
+  version: 5.8.0
+Django:
+  version: 3.2.6

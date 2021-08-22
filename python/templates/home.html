@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>PROJECT_API</title>
+</head>
+<body>
+
+<br><h1 style="text-align:center;">Welcome to project_API</h1><br><br>
+
+<div class="list-group">
+
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">HOME</h5>
+      <small>ACTIVE</small>
+    </div>
+    <p class="mb-1">This is a general home page to display other URI's inside our API.</p>
+    <small>http://127.0.0.1:5000</small>
+  </a>
+
+  <a href="http://127.0.0.1:5000/api/v1/feeding/project_API" target=" " class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">API 1: UPLOAD A FILE</h5>
+      <small class="text-muted">ACTIVE</small>
+    </div>
+    <p class="mb-1">This API allows client to upload zipped txt file. After that txt file get extracted and saved inside /uploads. Since directory is local, it will download file to local but not in server.</p>
+    <small class="text-muted">http://127.0.0.1:5000/api/v1/feeding/project_API</small>
+  </a>
+
+  <a href="http://127.0.0.1:5000/api/v1/status/<requestID>" target=" " class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">API 2: STATUS</h5>
+      <small class="text-muted">ACTIVE</small>
+    </div>
+    <p class="mb-1">This API takes requestID from client inside URI as a parameter. If it is not given, client will receive bad request error from server. If you directly enter from here, requestID will be accepted as requestID</p>
+    <small class="text-muted">http://127.0.0.1:5000/api/v1/status/>requestID<</small>
+  </a>
+
+   <a href="http://127.0.0.1:5000/api/v1/learning/project_API" target=" " class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">API 3: LEARNING</h5>
+      <small class="text-muted">ACTIVE</small>
+    </div>
+    <p class="mb-1">This is a future use API</p>
+    <small class="text-muted">http://127.0.0.1:5000/api/v1/learning/project_API</small>
+  </a>
+
+   <a href="http://127.0.0.1:5000/api/v1/prediction/<analysID>" target=" " class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">API 4: PREDICTION</h5>
+      <small class="text-muted">ACTIVE</small>
+    </div>
+    <p class="mb-1">This is a future use API</p>
+    <small class="text-muted">http://127.0.0.1:5000/api/v1/prediction/>analysID<</small>
+  </a>
+
+   <a href="http://127.0.0.1:5000/api/v1/feeding/model/<projectName>" target=" " class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">API 5: (JSON) MODEL UPLOAD</h5>
+      <small class="text-muted">ACTIVE</small>
+    </div>
+        <p class="mb-1">This is uploads JSON data into S3 bucket:model server. You can send request with JSON data to this link</p>
+    <small class="text-muted">http://127.0.0.1:5000/api/v1/feeding/model/>projectName<</small>
+  </a>
+
+   <a href="http://127.0.0.1:5000/api/v1/feeding/data/<projectName>" target=" " class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">API 6: (JSON) DATA UPLOAD</h5>
+      <small class="text-muted">ACTIVE</small>
+    </div>
+    <p class="mb-1">This is uploads JSON data into S3 bucket:data server. You can send request with JSON data to this link</p>
+    <small class="text-muted">http://127.0.0.1:5000/api/v1/feeding/data/>projectName<</small>
+  </a>
+
+</div>
+<br>
+<br>
+<div style="text-align:center;">
+    <a href="http://127.0.0.1:5000/swagger-ui" target=" "> SWAGGER DOCUMENTATION</a>
+</div>
+<br>
+<br>
+
+
+</body>
+</html>

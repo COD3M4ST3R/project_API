@@ -1,0 +1,13 @@
+
+# Parameters
+
+minIO:
+  server: 192.168.1.44:9000
+  userName: minioadmin
+  userPassword: minioadmin
+rabbitMQ:
+  server: 192.168.1.44
+  port: 5672
+  userName: admin
+  userPassword: admin
+  virtualHost: /
