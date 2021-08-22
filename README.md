@@ -1,6 +1,6 @@
 # project_API
 
-## For further information, chech Wiki segment.
+## For further information, check Wiki segment.
 
  An Artificial Intelligence (AI) requires a lot of data to process and a good flow 
 through systems to analysis it respect to created models. The project which is 
